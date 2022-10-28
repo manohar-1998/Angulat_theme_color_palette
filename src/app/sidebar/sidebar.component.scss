@@ -1,0 +1,30 @@
+.div-label {
+    height: 2.5rem;
+    // border:1px solid rgb(151, 153, 151);
+    // text-align: center;
+    // vertical-align: middle;
+    // line-height: 2.5rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    border-radius: 10px;
+}
+
+.div-label:hover {
+    background-color: rgb(245, 245, 102);
+}
+
+.mat-list-main {
+    height: 100vh !important;
+    // border-top: 2mm ridge rgba(211, 220, 50, .6);
+    // border-right: 4mm ridge rgba(211, 220, 50, .6);
+    // border-bottom: 2mm ridge rgba(211, 220, 50, .6);
+    // border-left: 4mm ridge rgba(211, 220, 50, .6);
+}
+
+.mat-list-section {
+    margin: 5rem 0px;
+    color: black;
+    border-left: 2px soild red;
+    text-align: center;
+}

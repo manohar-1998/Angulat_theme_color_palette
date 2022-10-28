@@ -1,14 +1,23 @@
-<app-theme-switch></app-theme-switch> 
+<!-- <app-theme-switch></app-theme-switch> 
 
- <app-home></app-home>
+ <app-home></app-home> -->
 
-<!-- <div class="main-container">
-    <div style="display: flex;height: 100vh;">
-        <div style="border: 2px solid black;max-height: 100%;width: 14%;background-color: rgb(218, 214, 214);">Left</div>
-        <div style="height: 100%;border: 2px solid green;width: 86%;">
-            <div><app-header></app-header></div>
-            <div><app-main></app-main></div>
-            <div><app-footer></app-footer></div>
+<div class="main-container">
+    <div style="display: flex;position: relative;height: 100vh !important;">
+        <div style="width: 15%;height: 100vh !important">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div style="width: 85%;">
+            <div style="height: 15vh;">
+                <app-header></app-header>
+            </div>
+            <div style="height:70vh;overflow-y: auto;">
+                <!-- <app-home></app-home> -->
+                <router-outlet></router-outlet>
+            </div>
+            <div style="height: 15vh;background-color: transparent;">
+                <app-footer></app-footer>
+            </div>
         </div>
     </div>
-</div> -->
+</div>

@@ -1,0 +1,109 @@
+<!-- <div>
+    <mat-card class="main-container">
+        <form [formGroup]="premiumForm">
+            <div>
+                <label>Name (required*)</label><br />
+                <mat-form-field class="full-width" appearance="outline">
+                    <input type="email" matInput formControlName="userName">
+                    <mat-error *ngIf="premiumForm.get('userName')?.hasError('required')">
+                        Please enter <strong>UserName</strong>
+                    </mat-error>
+                    <mat-error *ngIf="premiumForm.get('userName')?.hasError('minlength')">
+                        Username must be <strong>3 characters</strong> or longer
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <label>Business Name (required*)</label><br />
+                <mat-form-field class="full-width" appearance="outline">
+                    <input type="email" matInput formControlName="userName">
+                    <mat-error *ngIf="premiumForm.get('businessName')?.hasError('required')">
+                        Please enter <strong>UserName</strong>
+                    </mat-error>
+                    <mat-error *ngIf="premiumForm.get('userName')?.hasError('minlength')">
+                        Username must be <strong>3 characters</strong> or longer
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <label>Email (required*)</label><br />
+                <mat-form-field class="full-width" appearance="outline">
+                    <input type="email" matInput formControlName="email" placeholder="Hello@email.com">
+                    <mat-error *ngIf="premiumForm.get('email')?.hasError('required')">
+                        Please enter <strong>Email</strong>
+                    </mat-error>
+                    <mat-error *ngIf="premiumForm.get('email')?.hasError('email')">
+                        Email must be <strong>8 characters minimum</strong> or longer
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <label>Phone Number</label>
+                <mat-form-field appearance="outline">
+                    <example-tel-input formControlName="tel" required></example-tel-input>
+                    <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+            </div>
+            <div>
+                <label>Business Category</label>
+                <mat-form-field appearance="outline">
+                    <mat-label>Select</mat-label>
+                    <mat-select>
+                        <mat-option value="jewelry">Jewelry</mat-option>
+                        <mat-option value="two">Second</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="margin-spacer">
+                <label>Address</label>
+                <mat-form-field appearance="outline">
+                    <textarea style="border: 1px solid black;" matInput></textarea>
+                </mat-form-field>
+            </div>
+        </form>
+    </mat-card>
+</div> -->
+
+<div class="margin-spacer">
+    <div style="display: flex">
+        <div style="margin: 0 auto;width: 60%;">
+            <mat-card class="main-container">
+                <form [formGroup]="contactForm">
+                    <div>
+                        <label>Name (required*)</label><br/>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <input type="email" matInput formControlName="userName">
+                            <mat-error *ngIf="contactForm.get('userName')?.hasError('required')">
+                                Please enter <strong>UserName</strong>
+                            </mat-error>
+                            <mat-error *ngIf="contactForm.get('userName')?.hasError('minlength')">
+                                Username must be <strong>3 characters</strong> or longer
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <label>Email (required*)</label><br/>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <input type="email" matInput formControlName="email" placeholder="Hello@email.com">
+                            <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
+                                Please enter <strong>Email</strong>
+                            </mat-error>
+                            <mat-error *ngIf="contactForm.get('email')?.hasError('email')">
+                                Email must be <strong>8 characters minimum</strong> or longer
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <label>Messsage</label>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <textarea matInput></textarea>
+                          </mat-form-field>
+                    </div>
+                </form>
+                <button mat-raised-button style="background-color: black;color:white">
+                    Submit
+                </button>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div>
+    <div class="btn">
+        <button class="btnLayout" style="height: 20%; width:20%" mat-raised-button>
+            <!-- <h1 style="border: 2px solid red;margin: 0;padding: 0;object-fit: fill;">He</h1> -->
+            <!-- Choose the Plan -->
+        </button>
+    </div><br />
+    <div class="card-container">
+        <mat-card class="card-box">
+            <mat-card-title>Classified</mat-card-title><br />
+            <mat-card-subtitle>Free</mat-card-subtitle>
+            <mat-card-content>
+                <ul class="list-content">
+                    <li>Name</li>
+                    <li>Business Name</li>
+                    <li>Business Category</li>
+                    <li>Address</li>
+                </ul>
+            </mat-card-content>
+            <mat-card-actions>
+                <button routerLink="/classified-form" mat-button>Select</button>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="card-box">
+            <mat-card-title>Premium</mat-card-title><br />
+            <mat-card-subtitle>99/- pre year</mat-card-subtitle>
+            <mat-card-content>
+                <ul class="list-content">
+                    <li>Name</li>
+                    <li>Business Name</li>
+                    <li>Contact Number</li>
+                    <li>Email Id</li>
+                    <li>Address</li>
+                    <li>3 photos of your business</li>
+                </ul>
+            </mat-card-content>
+            <mat-card-actions>
+                <button routerLink="/premium-form" class="fixed-cards" mat-button>Select</button>
+            </mat-card-actions>
+        </mat-card>
+        <mat-card class="card-box">
+            <mat-card-title>VIP</mat-card-title><br />
+            <mat-card-subtitle>250/- pre year</mat-card-subtitle>
+            <div style="overflow: auto;">
+                <mat-card-content style="height: 100%;">
+                    <ul class="list-content">
+                        <li>Name</li>
+                        <li>Business Name</li>
+                        <li>Contact Number</li>
+                        <li>Email Id</li>
+                        <li>Address</li>
+                        <li>3 photos of your business</li>
+                        <li style="list-style-position: outside !important;">Anchor link direct google location to your
+                            business location</li>
+                        <li>Anchor link Directing traffic to your website</li>
+                    </ul>
+                </mat-card-content>
+            </div>
+            <mat-card-actions>
+                <button routerLink="/vip-form" style="position: relative" mat-button>Select</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

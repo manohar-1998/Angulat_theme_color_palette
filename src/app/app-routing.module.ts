@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
+import { MainComponent } from './body/main/main.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ExperimentComponent } from './experiment/experiment.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: '/header', component: HeaderComponent },
-  { path: '/main',component: MainComponent},
-  { path: '/footer', component: FooterComponent}
+  { path: '', component: MainComponent },
+  { path: 'header', component: HeaderComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'sidebar', component: SidebarComponent },
+  { path: 'experiment', component: ExperimentComponent}
 ];
 
 @NgModule({
@@ -17,5 +19,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
- }
+
+}

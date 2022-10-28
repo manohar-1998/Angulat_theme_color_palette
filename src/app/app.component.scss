@@ -1,4 +1,13 @@
-main-container{
-    margin: 2px solid red;
-    height: 100%;
+main-container {
+  // margin: 0.2rem solid red;
+  position: relative;
+  height: auto;
+  min-height: 100vh !important;
+  // border: 3px;
+  // box-sizing: border-box;
+}
+.body-Content{
+  ::-webkit-scrollbar {
+    display: none;
+}
 }

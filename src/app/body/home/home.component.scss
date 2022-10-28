@@ -1,0 +1,58 @@
+.main-card {
+  max-width: 400px;
+  border: 1px solid rgb(248, 243, 243);
+  border-radius: 20px;
+}
+
+.margin-spacer {
+  margin: 0.7rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    flex-basis: 100%;
+    margin: 2px 3px;
+    background-color: rgb(228, 224, 224);
+    border-radius: 10px;
+  }
+
+  .right-div {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+}
+
+.right-txt {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.textContent {
+  color: black;
+  font-family: 'Lucida Sans';
+  padding: 20px;
+  font-size: 16px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  button {
+    background-color: orange;
+    color: white;
+    font-family: 'Lucida Sans';
+    border-left: 30px solid white;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid white;
+  }
+}
