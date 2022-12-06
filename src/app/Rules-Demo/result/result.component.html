@@ -1,0 +1,137 @@
+<div>
+  <div
+    style="
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    "
+  >
+    <mat-form-field *ngIf="projectsResult" appearance="outline">
+      <mat-label>Select Project</mat-label>
+      <mat-select [(ngModel)]="collectedData.project_id">
+        <mat-option
+          *ngFor="let projects of projectsResult"
+          [value]="projects.project_id"
+        >
+          {{ projects?.project_name }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <br />
+  <div class="container">
+    <button (click)="executeRule()" mat-raised-button color="primary">
+      Execute Rule
+    </button>
+  </div>
+  <hr />
+
+  <!-- Using Reactive Form -->
+  <!-- Field Label -->
+  <!-- <form [formGroup]="labelForm" autocomplete="off">
+    <div style="display: flex">
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Field Label</mat-label>
+          <input matInput formControlName="field_label" />
+        </mat-form-field>
+      </div>
+       Field Name -->
+  <!-- <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Field Name</mat-label>
+          <input matInput formControlName="field_name" />
+        </mat-form-field>
+      </div> -->
+  <!-- Field Type -->
+  <!-- <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Field Type</mat-label>
+          <mat-select formControlName="field_type">
+            <mat-option value="input">Input Field</mat-option>
+            <mat-option value="boolean">Boolean Field</mat-option>
+            <mat-option value="dropdown">DropDown Field</mat-option>
+            <mat-option value="date">Date Field</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </form> -->
+  <!-- Using Angular Template Driven Forms -->
+  <form novalidate #fieldForm="ngForm">
+    <h4>Using Angular Template Driven Forms</h4>
+    <div>
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Field Label</mat-label>
+          <input
+            class="form-control"
+            type="text"
+            name="field_label"
+            matInput
+            required
+            ngModel
+            minlength="4"
+            #field_label="ngModel"
+          />
+        </mat-form-field>
+        <div *ngIf="field_label.invalid && (field_label.dirty || field_label.touched)" style="margin: 0px;" class="alert">
+          <div *ngIf="field_label.errors?.['required']">Field Label is required.</div>
+          <div *ngIf="field_label.errors?.['minlength']">
+            Label must be at least 4 characters long.
+          </div>
+        </div>
+      </div>
+      <!-- Field Name -->
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Field Name</mat-label>
+          <input
+            class="form-control"
+            type="text"
+            name="field_name"
+            matInput
+            ngModel
+          />
+        </mat-form-field>
+      </div>
+      <!-- Field Type -->
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Field Type</mat-label>
+          <mat-select class="form-control" name="field_type" ngModel>
+            <mat-option value="input">Input Field</mat-option>
+            <mat-option value="boolean">Boolean Field</mat-option>
+            <mat-option value="dropdown">DropDown Field</mat-option>
+            <mat-option value="date">Date Field</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+  <div>
+    <button mat-raised-button (click)="createField(fieldForm)" color="primary">
+      Save
+    </button>
+  </div>
+
+  <hr />
+  <div>Fields :{{ fieldForm.value | json }}</div>
+
+  <hr />
+
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Fields List</mat-label>
+      <mat-select>
+        <mat-option
+          *ngFor="let data of fieldTypeResult"
+          #dataCheck
+          [value]="data.field_type"
+          >{{ data.field_name }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>

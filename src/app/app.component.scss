@@ -1,8 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 main-container {
-  // margin: 0.2rem solid red;
-  position: relative;
-  height: auto;
-  min-height: 100vh !important;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
   // border: 3px;
   // box-sizing: border-box;
 }

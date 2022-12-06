@@ -22,6 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './body/contact-us/contact.component';
 import { BodyModule } from './body/body.module';
 import { ExperimentComponent } from './experiment/experiment.component';
+import { ResultComponent } from './Rules-Demo/result/result.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -36,8 +38,10 @@ import { ExperimentComponent } from './experiment/experiment.component';
     FooterComponent,
     SidebarComponent,
     ExperimentComponent,
+    ResultComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,

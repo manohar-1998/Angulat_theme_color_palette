@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Gill Sans MT";
+    font-size: larger;
+    src: url(./assets//33535gillsansmt.ttf);
+  }
+  
+  *:not(mat-icon) {
+    font-family: "Gill Sans MT", sans-serif !important;
+  }
+
+  html {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }

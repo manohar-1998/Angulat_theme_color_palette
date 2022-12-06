@@ -3,19 +3,19 @@
  <app-home></app-home> -->
 
 <div class="main-container">
-    <div style="display: flex;position: relative;height: 100vh !important;">
-        <div style="width: 15%;height: 100vh !important">
+    <div style="display: flex">
+        <div style="width: 15%;height: 100vh;">
             <app-sidebar></app-sidebar>
         </div>
-        <div style="width: 85%;">
-            <div style="height: 15vh;">
+        <div style="width: 85%;height:100vh;margin: 0;padding: 0;">
+            <div style="height: 15vh;border: 2px solid red;">
                 <app-header></app-header>
             </div>
-            <div style="height:70vh;overflow-y: auto;">
+            <div style="height:75vh;overflow-y: auto;">
                 <!-- <app-home></app-home> -->
                 <router-outlet></router-outlet>
             </div>
-            <div style="height: 15vh;background-color: transparent;">
+            <div style="height: 10vh;background-color: transparent; ">
                 <app-footer></app-footer>
             </div>
         </div>
