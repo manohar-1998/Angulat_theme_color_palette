@@ -20,7 +20,7 @@ import { VipComponent } from './forms/vip/vip.component';
   imports: [
     RouterModule.forChild([
       {
-        path: 'home', component: HomeComponent
+        path: '', component: HomeComponent
       },
       {
         path: 'contact-us', component: ContactComponent

@@ -1,23 +1,94 @@
-<div style="background-color: rgb(226, 221, 221);margin: 0;padding: 0;">
-    <div style=" display: flex;justify-content: space-between;">
-        <div>
-            <mat-form-field style="margin-top: 15px;" appearance="outline">
-                <mat-label>Area Filter</mat-label>
-                <mat-select>
-                    <mat-option value="one">First option</mat-option>
-                    <mat-option value="two">Second option</mat-option>
-                </mat-select>
-            </mat-form-field>
-        </div>
-        <div style="flex:2;padding: 0px 20px">
-            <input style="flex:2;width: 100%;
-            justify-content: center;align-items: center;border: 1px solid grey;border-radius: 5px;" type="text"
-                matInput placeholder="Search">
-        </div>
-        <div style="justify-content: space-around;display: flex;align-items: center;flex: 1;">
-            <button routerLink="/register" class="btn-class" mat-raised-button>Register</button>
-            <button routerLink="/home" class="btn-class" mat-raised-button>Home</button>
-            <button routerLink="/contact-us" class="btn-class" mat-raised-button>Contact Us</button>
-        </div>
+<!-- <div style=""> -->
+<div>
+  <!-- <div style="display: flex; justify-content: space-between">
+    <div
+      style="
+        display: flex;
+        border: 2px solid red;
+        display: flex;
+      "
+    >
+      <mat-form-field appearance="outline">
+          <mat-label>Area Filter</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+      </mat-form-field>
     </div>
+    <div
+      style="
+        flex: 1;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <input
+        style="
+          border: 1px solid grey;
+          border-radius: 5px;
+          height: 45px;
+          text-align: center;
+        "
+        type="text"
+        matInput
+        placeholder="Search"
+      />
+    </div>
+    <div
+      style="
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        flex: 1;
+      "
+    >
+      <button routerLink="/register" class="btn-class" mat-raised-button>
+        Register
+      </button>
+      <button routerLink="/home" class="btn-class" mat-raised-button>
+        Home
+      </button>
+      <button routerLink="/contact-us" class="btn-class" mat-raised-button>
+        Contact Us
+      </button>
+    </div>
+  </div> -->
+
+  <div class="button-container">
+    <form
+      style="width: 99%; display: flex; justify-content: flex-end;margin: 0.8rem 0rem;"
+    >
+      <mat-form-field class="left-spacer-1" appearance="outline">
+        <mat-label>Area Filter</mat-label>
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+    </mat-form-field>
+      <button mat-flat-button style="flex: 2;margin-top: 0.2rem;" class="left-spacer-1 search-button" type="submit">
+        <mat-icon>search</mat-icon>
+        Search
+      </button>
+      <div class="left-spacer-1" style="
+      justify-content: space-around;
+      display: flex;
+      flex: 1;
+      margin-top: 0.3rem;
+    ">
+          <button routerLink="/register" class="btn-class" mat-raised-button>
+              Register
+            </button>
+            <button routerLink="/home" class="btn-class" mat-raised-button>
+              Home
+            </button>
+            <button routerLink="/contact-us" class="btn-class" mat-raised-button>
+              Contact Us
+            </button>
+      </div>
+    </form>
+  </div>
 </div>

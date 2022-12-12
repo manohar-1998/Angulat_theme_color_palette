@@ -24,7 +24,8 @@ import { BodyModule } from './body/body.module';
 import { ExperimentComponent } from './experiment/experiment.component';
 import { ResultComponent } from './Rules-Demo/result/result.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 
 
 @NgModule({
@@ -52,6 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatCardModule,
     MatListModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     BodyModule,
     MaterialModule,
     ReactiveFormsModule,
